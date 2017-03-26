@@ -41,11 +41,12 @@ h1, h2, h3, h4, h5, h6
 {
 	background: url(../img/roofs.jpg) no-repeat;
 	background-size: cover;
-	min-height: 610px;
+	min-height: 850px;
 }
 .bg-color
 {
 	background-color: RGBA(0, 0, 0, 0.41);
+    min-height: 850px;
 }
 
 .nav > li > a {
@@ -94,7 +95,7 @@ h1, h2, h3, h4, h5, h6
 
 .wrapper
 {
-	padding: 90px 0px 130px;
+	padding: 180px 0px 130px;
 }
 .top-title
 {
