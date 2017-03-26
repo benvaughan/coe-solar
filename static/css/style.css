@@ -53,9 +53,9 @@ h1, h2, h3, h4, h5, h6
 }
 .navbar-brand
 {
-    background: url(../img/COE_Solar_v2_wide.png) no-repeat;
-	padding: 40px;
-	height: inherit;
+    background: url(../img/COE_Solar_text_only_v1.png) no-repeat;
+	padding: 0;
+	height: 40px;
 	font-family: 'Lato', sans-serif;
 }
 .navbar-default .navbar-brand {
