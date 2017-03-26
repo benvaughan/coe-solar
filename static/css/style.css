@@ -53,6 +53,7 @@ h1, h2, h3, h4, h5, h6
 }
 .navbar-brand
 {
+    background: url(../img/COE_Solar_v1.png) no-repeat;
 	padding: 0px;
 	height: inherit;
 	font-family: 'Lato', sans-serif;
