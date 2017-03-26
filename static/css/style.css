@@ -54,8 +54,9 @@ h1, h2, h3, h4, h5, h6
 .navbar-brand
 {
     background: url(../img/COE_Solar_text_only_v1.png) no-repeat;
-	padding: 0;
-	height: 40px;
+    background-size: 59px 40px;
+	padding: 10px 30px;
+	height: inherit;
 	font-family: 'Lato', sans-serif;
 }
 .navbar-default .navbar-brand {
@@ -379,6 +380,11 @@ a, a:hover
     color: #000;
 }
 /****/
+@media (min-width: 768px){
+    .navbar-nav{
+        margin-top: 10px;
+    }
+}
 @media (min-width: 451px) and (max-width: 900px){
     .section-title{
         margin-bottom: 15px;
