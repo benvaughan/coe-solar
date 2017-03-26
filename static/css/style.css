@@ -381,6 +381,10 @@ a, a:hover
     color: #000;
 }
 /****/
+#base-logo {
+    height: 75px;
+}
+/****/
 @media (min-width: 768px){
     .navbar-nav{
         margin-top: 10px;
