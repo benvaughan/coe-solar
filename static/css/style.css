@@ -65,7 +65,7 @@ h1, h2, h3, h4, h5, h6
 	letter-spacing: 2px;
 }
 .navbar-default .navbar-nav > .active > a, .navbar-default .navbar-nav > .active > a:focus, .navbar-default .navbar-nav > .active > a:hover {
-    color: #FFD34E;
+    color: #F8991D;
     background-color: transparent;
     text-transform: uppercase;
 }
@@ -76,7 +76,7 @@ h1, h2, h3, h4, h5, h6
 }
 .navbar-default .navbar-nav > li > a:hover, .navbar-default .navbar-nav > li > a:focus
 {
-	color: #FFD34E;
+	color: #F8991D;
 }
 
 .navbar-fixed-top {
@@ -128,7 +128,7 @@ h1, h2, h3, h4, h5, h6
 }
 .btn-submit
 {
-    background: #FFD34E;
+    background: #F8991D;
     border: 0px;
     display: inline-block;
     font-size: 16px;
@@ -146,7 +146,7 @@ h1, h2, h3, h4, h5, h6
     -ms-transition: all 0.4s ease-in-out;
     transition: all 0.4s ease-in-out;
     margin-top: 25px;
-    border: 2px solid  #FFD34E;
+    border: 2px solid  #F8991D;
 }
 
 .btn-submit:hover {
@@ -159,7 +159,7 @@ h1, h2, h3, h4, h5, h6
 }
 .cta-info
 {
-	border: 5px solid #FFD34E;
+	border: 5px solid #F8991D;
 	padding: 40px 0px;
 }
 .cta-info h3
@@ -314,11 +314,11 @@ h3.txt-tl {
 {
 	border-radius: 0px;
 	color: #000;
-	background-color: #FFD34E;
+	background-color: #F8991D;
 }
 a, a:hover
 {
-	color: #FFD34E;
+	color: #F8991D;
 }
 .cont-title
 {
@@ -398,7 +398,7 @@ a, a:hover
     }
     .navbar-default .navbar-nav > .active > a, .navbar-default .navbar-nav > .active > a:focus, .navbar-default .navbar-nav > .active > a:hover, .navbar-default .navbar-nav > li > a:hover, .navbar-default .navbar-nav > li > a:focus{
         background-color: rgba(255, 255, 255, 0.32);
-        color: #FFD34E;
+        color: #F8991D;
     }
     .top-title{
         font-size: 15px;
