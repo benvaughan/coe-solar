@@ -1,134 +1,84 @@
-
 <!DOCTYPE html>
-<html xmlns="http://www.w3.org/1999/xhtml">
-<head>
-<title></title>
-
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-
-</head>
-
-<style>
-
-body {
-	
-	background-image: url('grunge_patterns.jpg');
-	background-attachment: fixed;
-	color: #333;
-}
-
-.box {
-	border-radius: 3px;
-	background: rgba(101, 101, 101, 0.7); margin: auto; padding: 12px;
-}
-
-.lightbox {
-	zoom: 1.5;
-	position: fixed;
-	top: 0;
-	left: 0;
-	width: 100%;
-	height: 100%;
-	background: rgba(10, 10, 10, 0.8);
-	text-align: center;
-	margin: auto;
-	
-}
-
-div.horizontal {
-	display: flex;
-	justify-content: center;
-	height: 100%;
-}
-
-div.vertical {
-	display: flex;
-	flex-direction: column;
-	justify-content: center;
-	width: 100%;
-}
-
-::-webkit-input-placeholder {
-   color: #955;
-   text-align: center;
-}
-
-::-moz-placeholder {  
-   color: #955;
-   text-align: center;
-}
-
-:-ms-input-placeholder {  
-   color: #955;
-   text-align: center;
-}
-
-</style>
-
-<body>
-	
-	<div id="loginbox" class="lightbox" >
-		<div class="horizontal">
-			<div class="vertical">
-				<div class="box">				
-					<input style="margin: 16px; text-align: center;" id="password" type="password" placeholder="password" /> <br />
-					<button id="loginbutton" type="button">Enter</button>
-					<p id="wrongPassword" style="display: none">wrong password</p>
-				</div>
-			</div>
-		</div>
-	</div>
-
-
-
-	<script type="text/javascript" src="https://code.jquery.com/jquery-1.12.0.min.js"></script>
-	 
-
-	 <script type="text/javascript" src="https://cdn.rawgit.com/chrisveness/crypto/master/sha1.js"></script>
-
-	<script type="text/javascript">
-	"use strict";
-
-
-	function loadPage(pwd) {
-		
-		var hash= pwd;
-		hash= Sha1.hash(pwd);
-		var url= hash + "/index.html";
-			
-		$.ajax({
-			url : url,
-			dataType : "html",
-			success : function(data) {
-
-				window.location= url;
-
-			},
-			error : function(xhr, ajaxOptions, thrownError) {
-			
-
-				parent.location.hash= hash;
-
-				//$("#wrongPassword").show();
-				$("#password").attr("placeholder","wrong password");
-				$("#password").val("");
-			}
-		});
-	}
-
-	 
-	$("#loginbutton").on("click", function() {
-		loadPage($("#password").val());
-	});
-	$("#password").keypress(function(e) {
-		if (e.which == 13) {
-			
-			loadPage($("#password").val());
-		}
-	});
-	$("#password").focus();
-		
-	</script>
-
-</body>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>COE Solar - Printed solar power</title>
+    <meta name="description" content="Free Bootstrap Theme by BootstrapMade.com">
+    <meta name="keywords" content="free website templates, free bootstrap themes, free template, free bootstrap, free website template">
+    <link href='https://fonts.googleapis.com/css?family=Lato:400,700,300|Open+Sans:400,600,700,300' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" type="text/css" href="http://coesolar.com.au/static/css/bootstrap.min.css">
+    <link rel="stylesheet" type="text/css" href="http://coesolar.com.au/static/css/font-awesome.min.css">
+    <link rel="stylesheet" type="text/css" href="http://coesolar.com.au/static/css/animate.css">
+    <link rel="stylesheet" type="text/css" href="http://coesolar.com.au/static/css/style.css">
+    <!-- =======================================================
+        Theme Name: Bethany
+        Theme URL: https://bootstrapmade.com/bethany-free-onepage-bootstrap-theme/
+        Author: BootstrapMade.com
+        Author URL: https://bootstrapmade.com
+    ======================================================= -->
+  </head>
+  <body>
+    <!--header-->
+    <header class="main-header" id="header">
+        <div class="bg-color">
+            <!--nav-->
+            <nav class="nav navbar-default navbar-fixed-top">
+                <div class="container">
+                    <div class="col-md-12">
+                        <div class="navbar-header">
+                        <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#mynavbar" aria-expanded="false" aria-controls="navbar">
+                            <span class="fa fa-bars"></span>
+                        </button>
+                            <a href="index.html" class="navbar-brand">&nbsp;</a>
+                        </div>
+                        <div class="collapse navbar-collapse navbar-right" id="mynavbar">
+                            <ul class="nav navbar-nav">
+                                <li class="active"><a href="#header">Home</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </nav>
+            <!--/ nav-->
+            <div class="container text-center">
+                <div class="wrapper wow fadeInUp delay-05s" >
+                    <h2 class="top-title">COE Solar</h2>
+                    <h3 class="title">Coming Soon</h3>
+                </div>
+            </div>
+        </div>
+    </header>
+    <!--/ header-->
+    
+    <!---->
+    <footer class="" id="footer">
+        <div class="container">
+            <div class="row">
+                <div class="col-sm-7 footer-copyright">
+                    <img src="http://coesolar.com.au/static/img/COE_Solar_v1.png" alt="" id="base-logo">
+                    <!-- © COE Solar Bethany Theme - All rights reserved-->
+                   <!--  <div class="credits">
+                        
+                            All the links in the footer should remain intact. 
+                            You can delete the links only if you purchased the pro version.
+                            Licensing information: https://bootstrapmade.com/license/
+                            Purchase the pro version with working PHP/AJAX contact form: https://bootstrapmade.com/buy/?theme=Bethany
+                       
+                        Designed by <a href="https://bootstrapmade.com/">Bootstrap Themes</a>
+                    </div> -->
+                </div>
+            </div>
+        </div>
+    </footer>
+    <!---->
+    <!--contact ends-->
+    <script src="http://coesolar.com.au/static/js/jquery.min.js"></script>
+    <script src="http://coesolar.com.au/static/js/jquery.easing.min.js"></script>
+    <script src="http://coesolar.com.au/static/js/bootstrap.min.js"></script>
+    <script src="http://coesolar.com.au/static/js/wow.js"></script>
+    <script src="http://coesolar.com.au/static/js/custom.js"></script>
+    <script src="http://coesolar.com.au/contactform/contactform.js"></script>
+    
+  </body>
 </html>
