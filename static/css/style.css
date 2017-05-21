@@ -363,6 +363,10 @@ a, a:hover
     -webkit-transform: rotate(20deg);
     transform: rotate(20deg);
 }
+
+.caption {
+    padding-right: 10px;
+}
 /****/
 #footer
 {
